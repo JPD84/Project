@@ -7,20 +7,45 @@ class Member
 
   def initialize( options )
     @id = options['id'].to_i if options['id']
-    @member_id = options['member_id'].to_i
-    @gymclass_id = options['gymclass_id'].to_i
+    @name = options['name'].to_i
+    @age = options['age'].to_i
   end
 
   def save()
-    sql = "INSERT INTO members (member_id, gymclass_id)
+    sql = "INSERT INTO members (name, age)
     VALUES ($1,$2) RETURNING id;"
-    values = [@member_id, @gymclass_id]
+    values = [@name, @age]
     result = SqlRunner.run(sql, values)
     @id = result[0]['id'].to_i
   end
 
+  def update()
+    sql = "UPDATE members SET () = ($1, $2,) WHERE id = $"
+    values = [@, , @age, @id]
+    SqlRunner.run(sql, values)
+  end
+
   def delete()
-      sql = "DELETE FROM members WHERE id = $1"
-      values = [@id]
-      SqlRunner.run(sql, values)
-    end
+    sql = "DELETE FROM members WHERE id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
+
+  def self.delete_all()
+    sql = "DELETE FROM members"
+    customers = SqlRunner.run(sql)
+  end
+
+  def self.find(id)
+    sql = "SELECT * FROM members WHERE id = $1"
+    values = [id]
+    results = SqlRunner.run(sql, values)[0]
+    member = Member.new(results)
+    return member
+  end
+
+  def self.all
+    sql = "SELECT * FROM members"
+    members = SqlRunner.run(sql)
+    return customers.map { |members| Member.new(member)}
+  end
