@@ -1,6 +1,7 @@
 DROP TABLE bookings;
-DROP TABLE members;
 DROP TABLE gym_sessions;
+
+DROP TABLE members;
 
 
 CREATE TABLE members
