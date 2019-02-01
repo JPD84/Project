@@ -60,7 +60,29 @@ member7.save
 member8 = Member.new({'name' => 'Mike runnerman', 'age' => '21'})
 member8.save
 
-
+# booking1 = Booking.new({'member_id' => member1.id, 'gym_session_id' => gym_session1.id})
+# booking1.save
+#
+# booking2 = Booking.new({'member_id' => member2.id, 'gym_session_id' => gym_session2.id})
+# booking2.save
+#
+# booking3 = Booking.new({'member_id' => member3.id, 'gym_session_id' => gym_session3.id})
+# booking3.save
+#
+# booking4 = Booking.new({'member_id' => member4.id, 'gym_session_id' => gym_session4.id})
+# booking4.save
+#
+# booking5 = Booking.new({'member_id' => member5.id, 'gym_session_id' => gym_session5.id})
+# booking5.save
+#
+# booking6 = Booking.new({'member_id' => member6.id, 'gym_session_id' => gym_session6.id})
+# booking6.save
+#
+# booking7 = Booking.new({'member_id' => member7.id, 'gym_session_id' => gym_session7.id})
+# booking7.save
+#
+# booking8 = Booking.new({'member_id' => member8.id, 'gym_session_id' => gym_session8.id})
+# booking8.save
 
 binding.pry
 nil
