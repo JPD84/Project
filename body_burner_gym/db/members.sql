@@ -1,25 +1,25 @@
 DROP TABLE bookings;
 DROP TABLE members;
-DROP TABLE classes;
+DROP TABLE gym_sessions;
 
 
-CREATE TABLE members;
+CREATE TABLE members
 (
   id SERIAL8 primary key,
   name VARCHAR(255),
   age INT4
 );
 
-CREATE TABLE classes;
+CREATE TABLE gym_sessions
 (
   id SERIAL8 primary key,
   name VARCHAR(255),
   type VARCHAR(255)
 );
 
-CREATE TABLE bookings;
+CREATE TABLE bookings
 (
   id SERIAL8 primary key,
-  gym_class_id INT8 references gym_class(id)
-  member_id INT8 references member(id)
+  gym_session_id INT8 references gym_sessions(id),
+  member_id INT8 references members(id)
 );
