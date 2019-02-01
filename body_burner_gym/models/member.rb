@@ -33,7 +33,6 @@ class Member
 
   def self.delete_all()
     sql = "DELETE FROM members"
-    members = SqlRunner.run(sql)
   end
 
   def self.find(id)
@@ -49,5 +48,25 @@ class Member
     members = SqlRunner.run(sql)
     return members.map { |member| Member.new(member)}
   end
+
+  def gym_sessions
+    sql = "SELECT g.* FROM gym_sessions g INNER JOIN bookings b ON b.gym_session_id = g.id WHERE b.member_id = $1;"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map { |gym_session| GymSession.new(gym_session) }
+  end
+  # def members()
+  #   sql = "SELECT g.* FROM gym_sessions g INNER JOIN bookings b ON b.gym_session_id = g.id WHERE b.member_id = $1;"
+  #   values = [@id]
+  #   results = SqlRunner.run(sql, values)
+  #   return results.map { |member| Member.new(member) }
+  # end
+  #
+  # def victims
+  #   sql = "SELECT v.* FROM victims v INNER JOIN bitings b ON b.victim_id = v.id WHERE b.zombie_id = $1;"
+  #   values = [@id]
+  #   results = SqlRunner.run(sql, values)
+  #   return results.map { |victim| Victim.new(victim) }
+  # end
 
 end
