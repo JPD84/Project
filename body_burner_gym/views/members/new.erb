@@ -1,22 +1,23 @@
-<form method="post" action="/members">
-  <label for="first-name-field">First Name:</label>
-  <input
-  type="text"
-  name="first_name"
-  id="first-name-field"
-  />
 
-  <label for="last-name-field">Last Name:</label>
-  <input
-  type="text"
-  name="last_name"
-  id="last-name-field"
-  />
+<h1>Add new Member</h1>
+<form method="post"action="/members">
+  <label for="first-name">First Name:</label>
+  <input type="text" name="first_name" id="first-name"/>
 
-  <label for="member-age">Age:</label>
-  <input type="number" name="age" id="age"
-  />
+  <label for="last-name">Last Name:</label>
+  <input type="text" name="last_name" id="last-name"/>
 
 
-  <input type="edit" value="delete">
+  <label for="age">Age:</label>
+  <input type="text" name="age" id="age"/>
+
+
+  <label for="member_id">Member:</label>
+  <select name="member_id" id="member_id">
+    <% Member.all.each do |member| %>
+    <option value="<%= member.id %>"><%= member.name %></option>
+    <% end %>
+  </select>
+
+  <input type="submit" value="Add member"/>
 </form>

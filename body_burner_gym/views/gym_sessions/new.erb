@@ -1,0 +1,19 @@
+<h1>Add new Gym Session</h1>
+<form method="post"action="/gym_sessions">
+  <label for="name">Name:</label>
+  <label for="type">Type:</label>
+  <input type="text" name="name" id="name"/>
+
+  <label for="type">Type:</label>
+  <input type="text" type="type" id="type"/>
+
+
+  <label for="gym_sessions">Gym_session:</label>
+  <select name="gym_session_id" id="gym_session_id">
+    <% GymSession.all.each do |gym_session| %>
+    <option value="<%= gym_session.id %>"><%= gym_session.name %></option>
+    <% end %>
+  </select>
+
+  <input type="submit" value="Add gym session"/>
+</form>

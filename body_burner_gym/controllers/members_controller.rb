@@ -6,7 +6,7 @@ also_reload( '../models/*' )
 
 get '/members' do
   @members = Member.all()
-  erb(:"member/index")
+  erb(:"members/index")
 end
 
 get '/members/new' do
