@@ -1,6 +1,6 @@
 <h1>All Members</h1>
 
-<% @member.each do |members| %>
+<% @members.each do |member| %>
   <p>Name: <%= member.name %></p>
   <p>Age: <%= member.age %></p>
   <p><a href="/members/<%= members.id %>">Show Members</a></p>
