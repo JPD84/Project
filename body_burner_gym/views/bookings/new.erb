@@ -1,0 +1,18 @@
+<h1>Add new booking</h1>
+<form method="post"action="/bookings">
+
+  <label for="gym_sessions">Gym_session:</label>
+  <select name="gym_session_id" id="gym_session_id">
+    <% GymSession.all.each do |gym_session| %>
+    <option value="<%= gym_session.id %>"><%= gym_session.name %></option>
+    <% Member.all.each do |member| %>
+    <option value="<%= member.id %>"><%= member.name %></option>
+    <% end %>
+  </select>
+
+  <label for="gym_member"></label>
+  <label for="gym_session"></label>
+
+
+  <input type="submit" value="Add booking"/>
+</form>
