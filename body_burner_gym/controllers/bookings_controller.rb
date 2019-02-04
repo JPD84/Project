@@ -32,8 +32,9 @@ post '/bookings' do
   redirect to '/bookings'
 end
 
-post '/bookings' do
-  Booking.new(params).save
+post '/bookings/:id' do
+  # binding.pry
+  Booking.new(params).update
   redirect to '/bookings'
 end
 

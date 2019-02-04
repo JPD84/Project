@@ -1,5 +1,5 @@
 body {
-  background-image: url('/images/background.jpg');
+  background-image:('/images/background image.jpg');
 }
 
 }
@@ -9,4 +9,32 @@ body {
   font-style: normal;
   text-align: center;
   color: #c4180f;
+}
+
+nav {
+  background-color: #51617c;
+}
+
+.topnav {
+    background-color: #8b8e93;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #e8ebef;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h1 {
+  color: #e8ebef;
+  margin:0;
+  font-variant: medium-caps;
+  font-size: 80px;
+  text-align: center;
+  font-family: Permanent Marker;
+  margin-bottom: 20px;
 }
