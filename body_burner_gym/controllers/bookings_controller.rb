@@ -13,7 +13,7 @@ end
 
 get '/bookings/new' do
   @bookings = Booking.all
-  erb(:new)
+  erb(:"bookings/new")
 end
 
 post '/bookings' do

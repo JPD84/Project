@@ -3,10 +3,9 @@ require_relative( "../models/member.rb" )
 require_relative( "../models/booking.rb" )
 require('pry')
 
-
+Booking.delete_all()
 GymSession.delete_all()
 Member.delete_all()
-Booking.delete_all()
 
 
 gymsession1 = GymSession.new({

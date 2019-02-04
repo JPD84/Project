@@ -10,7 +10,7 @@
 
   <label for="gym_sessions">Gym_session:</label>
   <select name="gym_session_id" id="gym_session_id">
-    <% GymSession.all.each do |gym_session| %>
+    <% GymSession.all do |gym_session| %>
     <option value="<%= gym_session.id %>"><%= gym_session.name %></option>
     <% end %>
   </select>

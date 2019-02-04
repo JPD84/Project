@@ -1,9 +1,9 @@
 <h1>All Gym Sessions</h1>
 
-<% @gym_session.each do |gym_sessions| %>
+<% @gym_sessions.each do |gym_session| %>
   <p>Name: <%= gym_session.name %></p>
   <p>Type: <%= gym_session.type %></p>
-  <p><a href="/gym_sessions/<%= gym_sessions.id %>">Show Gym Sessions</a></p>
+  <p><a href="/gym_sessions/<%= gym_session.id %>">Show Gym Sessions</a></p>
   <hr />
 
 <% end %>

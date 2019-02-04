@@ -39,7 +39,7 @@ class Member
     sql = "SELECT * FROM members WHERE id = $1"
     values = [id]
     results = SqlRunner.run(sql, values)[0]
-    members = Member.new(results)
+    member = Member.new(results)
     return member
   end
 
@@ -55,6 +55,6 @@ class Member
     results = SqlRunner.run(sql, values)
     return results.map { |gym_session| GymSession.new(gym_session) }
   end
-  
+
 
 end

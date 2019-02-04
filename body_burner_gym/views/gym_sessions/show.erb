@@ -1,0 +1,7 @@
+<p>Name: <%= @gym_session.name %></p>
+<p>Type: <%= @gym_session.type %></p>
+
+<p><a href="/gym_sessions/<%= @gym_session.id %>/edit">Edit Gym Session</a></p>
+<form method="post" action="/gym_sessions/<%= @gym_session.id %>/delete">
+  <input type="Submit" value="Delete Gym Session"/>
+</form>

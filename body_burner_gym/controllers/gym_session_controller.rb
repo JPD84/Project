@@ -6,24 +6,27 @@ also_reload( '../models/*' )
 
 get '/gym_sessions' do
   @gym_sessions = GymSession.all()
-  erb ( :"gym_session/index" )
+  erb ( :"gym_sessions/index" )
 end
 
 get '/gym_sessions/new' do
-  @gym_sessions = GymSession.all
-  erb(:new)
+  erb(:"gym_sessions/new")
+end
+
+get '/gym_sessions/:id' do
+  @gym_session = GymSession.find(params['id'])
+  erb(:"gym_sessions/show")
 end
 
 get '/gym_sessions/:id/edit' do
-  @gym_sessions = GymSession.all
-  @gym_sessions = GymSession.find(params['id'])
-  erb(:edit)
+  @gym_session = GymSession.find(params['id'])
+  erb(:"gym_sessions/edit")
 end
 
 post '/gym_sessions/:id' do
-  gym_session = Member.new(params)
+  gym_session = GymSession.new(params)
   gym_session.update
-  redirect to "/gym_sessions /#{params['id']}"
+  redirect to "/gym_sessions"
 end
 
 post '/gym_sessions/:id/delete' do

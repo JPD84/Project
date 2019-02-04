@@ -5,14 +5,12 @@ also_reload( '../models/*' )
 
 
 get '/members' do
-  # @members = Member.all()
-  # erb(:"members/index")
-  erb(:"members/test")
+  @members = Member.all()
+  erb(:"members/index")
 end
 
 get '/members/new' do
-  @members = Member.all
-  erb(:new)
+  erb(:"members/new")
 end
 
 post '/members' do
@@ -21,14 +19,13 @@ post '/members' do
 end
 
 get '/members/:id' do
-  @members = Member.find(params['id'])
-  erb(:show)
+  @member = Member.find(params['id'])
+  erb(:"members/show")
 end
 
 get '/members/:id/edit' do
-  @members = Member.all
-  @members = Member.find(params['id'])
-  erb(:edit)
+  @member = Member.find(params['id'])
+  erb(:"members/edit")
 end
 
 post '/members/:id' do
