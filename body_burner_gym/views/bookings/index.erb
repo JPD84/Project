@@ -1,7 +1,7 @@
 <h1>All Bookings</h1>
 
 <a href="/bookings/new">New Booking</a>
-
+<hr>
 <% @bookings.each do |booking| %>
   <p>Member name: <%= booking.member.name %></p>
   <p>Gym session name: <%= booking.gym_session.name %></p>

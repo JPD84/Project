@@ -1,24 +1,23 @@
-<h1>Add new booking</h1>
+<h2>Update booking</h2>
 <form method="post"action="/bookings">
 
-
-  <label for="gym_member">Gym_member:</label>
+  <label for="update_booking">Gym member:</label>
   <select name="member_id" id="gym_member">
     <% Member.all.each do |member| %>
     <option value="<%= member.id %>"><%= member.name %></option>
     <% end %>
   </select>
-  <label for="gym_sessions">Gym_session:</label>
+  <label for="gym_sessions">Gym session:</label>
   <select name="gym_session_id" id="gym_session">
     <% GymSession.all.each do |gym_session| %>
     <option value="<%= gym_session.id %>"><%= gym_session.name %></option>
     <% end %>
   </select>
-  
-
-  <label for="gym_member"></label>
-  <label for="gym_session"></label>
 
 
-  <input type="submit" value="Add booking"/>
+  <label for="gym member"></label>
+  <label for="gym session"></label>
+
+
+  <input type="submit" value="update booking"/>
 </form>

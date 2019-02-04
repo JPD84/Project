@@ -72,12 +72,12 @@ booking3.save
 booking4 = Booking.new({'member_id' => member4.id, 'gym_session_id' => gymsession4.id})
 booking4.save
 
-# booking5 = Booking.new({'member_id' => member5.id, 'gym_session_id' => gymsession1.id})
-# booking5.save
+booking5 = Booking.new({'member_id' => member5.id, 'gym_session_id' => gymsession1.id})
+booking5.save
 #
-# booking6 = Booking.new({'member_id' => member6.id, 'gym_session_id' => gymsession6.id})
-# booking6.save
-#
+booking6 = Booking.new({'member_id' => member6.id, 'gym_session_id' => gymsession3.id})
+booking6.save
+
 # booking7 = Booking.new({'member_id' => member7.id, 'gym_session_id' => gymsession7.id})
 # booking7.save
 #

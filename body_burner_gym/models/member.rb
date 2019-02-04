@@ -33,6 +33,7 @@ class Member
 
   def self.delete_all()
     sql = "DELETE FROM members"
+    SqlRunner.run(sql)
   end
 
   def self.find(id)

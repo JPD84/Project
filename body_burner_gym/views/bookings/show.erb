@@ -1,7 +1,8 @@
-<p>Member name: <%= @member_id.name %></p>
-<p>Gym session name: <%= @gym_session_id.name %></p>
+<p>Member name: <%= @booking.member.name %></p>
+<p>Gym session name: <%= @booking.gym_session.name %></p>
 
-<p><a href="/bookings/<%= @bookings.id %>/edit">Edit booking</a></p>
+
+<p><a href="/bookings/<%= @booking.id %>/edit">Edit booking</a></p>
 <form method="post" action="/bookings/<%= @booking.id %>/delete">
   <input type="Submit" value="Delete Gym Session"/>
 </form>
