@@ -1,5 +1,7 @@
+<div class="show_members">
 <p>Name: <%= @member.name %></p>
 <p>Age: <%= @member.age %></p>
+</div>
 
 <p><a href="/members/<%= @member.id %>/edit">Edit Member</a></p>
 <form method="post" action="/members/<%= @member.id %>/delete">

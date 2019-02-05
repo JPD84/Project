@@ -1,8 +1,9 @@
 <h2>Update booking</h2>
 <form method="post"action="/bookings/<%= @booking.id %>">
 
-
+  <div class="Booking_gym_member">
   <label for="update_booking">Gym member:</label>
+  </div>
   <select name="member_id" id="gym_member">
     <% Member.all.each do |member| %>
     <% if @booking.member_id == member.id %>
@@ -12,7 +13,9 @@
     <% end %>
     <% end %>
   </select>
+  <div class="Gym_session_booking"
   <label for="gym_sessions">Gym session:</label>
+  </div>
   <select name="gym_session_id" id="gym_session">
     <% GymSession.all.each do |gym_session| %>
     <% if @booking.gym_session_id == gym_session.id %>

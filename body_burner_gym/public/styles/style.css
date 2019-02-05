@@ -28,6 +28,7 @@ h1 {
   text-align: center;
   font-family: Permanent Marker;
   margin-bottom: 20px;
+  text-shadow: 2px 2px;
 }
 
 h2 {
@@ -78,6 +79,7 @@ a {
 } */
 .members{
   color: chartreuse;
+
 
 }
 .member_details{
@@ -144,6 +146,69 @@ div.transbox p
   margin: 5%;
   font-weight: bold;
   color: #000000;
+}
+
+.gym_member{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 250px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.gym_session_booking{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 250px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.show_members{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 250px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+.show_gym_session{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 250px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;  
 }
 
 
