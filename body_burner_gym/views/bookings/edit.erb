@@ -5,14 +5,23 @@
   <label for="update_booking">Gym member:</label>
   <select name="member_id" id="gym_member">
     <% Member.all.each do |member| %>
-    <option value="<%= member.id %>"><%= member.name %></option>
+    <% if @booking.member_id == member.id %>
+    <option value="<%= member.id %>" selected ><%= member.name %></option>
+    <% else %>
+      <option value="<%= member.id %>" ><%= member.name %></option>
+    <% end %>
     <% end %>
   </select>
   <label for="gym_sessions">Gym session:</label>
   <select name="gym_session_id" id="gym_session">
     <% GymSession.all.each do |gym_session| %>
-    <option value="<%= gym_session.id %>"><%= gym_session.name %></option>
+    <% if @booking.gym_session_id == gym_session.id %>
+    <option value="<%= gym_session.id %>" selected ><%= gym_session.name %></option>
+    <% else %>
+    <option value="<%= gym_session.id %>" ><%= gym_session.name %></option>
     <% end %>
+    <% end %>
+
   </select>
 
 

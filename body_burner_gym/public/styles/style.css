@@ -1,0 +1,67 @@
+body {
+  background-image:('/images/background image.jpg');
+  background-size: cover;
+}
+
+}
+.main-content {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #c4180f;
+}
+
+nav {
+  background-color: #51617c;
+}
+
+h1 {
+  color: white;
+  margin:0;
+  font-variant: medium-caps;
+  font-size: 80px;
+  text-align: center;
+  font-family: Permanent Marker;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: white;
+  margin:0;
+  font-variant: medium-caps;
+  font-size: 80px;
+  text-align: center;
+  font-family: Permanent Marker;
+  margin-bottom: 20px;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+
+/* Change the link color to #111 (black) on hover */
