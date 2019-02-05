@@ -76,18 +76,20 @@ li a:hover {
 
 a {
     color: chartreuse;
+    font-size: 20px;
 }
 /* p{
   color: white;
 } */
 .members{
   color: chartreuse;
+  font-size: 20px;
 
 
 }
 .member_details{
   color: antiquewhite;
-  size: 40px;
+  font-size: 20px;
   div.transbox
     margin: 30px;
     background-color: #ffffff;
@@ -104,13 +106,14 @@ a {
 }
 .add_new_member{
   color: crimson;
+  font-size: 20px;
   div.transbox
     margin: 30px;
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    width: 50px;
+    width: 85px;
 
 
   div.transbox p
@@ -185,6 +188,7 @@ div.transbox p
 
 .show_members{
   div.transbox
+  font-size: 20px;
     margin: 30px;
     background-color: #ffffff;
     border: 1px solid black;
@@ -200,6 +204,7 @@ div.transbox p
 }
 .show_gym_session{
   div.transbox
+  font-size: 20px;
     margin: 30px;
     background-color: #ffffff;
     border: 1px solid black;
@@ -252,6 +257,73 @@ div.transbox p
   font-size: 40px;
 }
 
+.name_edit{
+  div.transbox
+  font-size: 30px;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 50px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.age_edit{
+  div.transbox
+  font-size: 30px;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 50px;
+
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.edit_session_name{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 60px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.edit_session_type{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 60px;
+
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
 /* .full-booking-container{
   display: grid;
 } */

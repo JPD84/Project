@@ -2,12 +2,12 @@
 <form method="POST" action="/members/<%= @member.id %>">
   <div class="form-wrapper">
 
-    <div class="form-el">
+    <div class="name_edit">
       <label for="name">Name:</label>
       <input type="text" name="name" id="name" value="<%= @member.name %>"/>
     </div>
 
-    <div class="form-el">
+    <div class="age_edit">
       <label for="age">Age:</label>
       <input type="number" name="age" id="age" value="<%= @member.age %>"/>
     </div>
