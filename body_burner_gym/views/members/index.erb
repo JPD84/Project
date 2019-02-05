@@ -1,9 +1,12 @@
 <h2>All Members</h2>
 
+<div class="members">
 <% @members.each do |member| %>
+<div class="member_details">
   <p>Name: <%= member.name %></p>
-  <p>Age: <%= member.age %></p>
+  <p>Age: <%= member.age %></p></div>
   <p><a href="/members/<%= member.id %>">Show Members</a></p>
   <hr />
 
 <% end %>
+</div>

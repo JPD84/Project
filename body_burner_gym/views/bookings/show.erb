@@ -1,6 +1,7 @@
+<div class="booking_details">
 <p>Member name: <%= @booking.member.name %></p>
 <p>Gym session name: <%= @booking.gym_session.name %></p>
-
+</div>
 
 <p><a href="/bookings/<%= @booking.id %>/edit">Edit booking</a></p>
 <form method="post" action="/bookings/<%= @booking.id %>/delete">

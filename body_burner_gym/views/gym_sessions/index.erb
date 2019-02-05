@@ -1,8 +1,10 @@
-<h1>All Gym Sessions</h1>
+<h2>All Gym Sessions</h2>
 
 <% @gym_sessions.each do |gym_session| %>
+<div class="gym_sessions">
   <p>Name: <%= gym_session.name %></p>
   <p>Type: <%= gym_session.type %></p>
+</div>
   <p><a href="/gym_sessions/<%= gym_session.id %>">Show Gym Sessions</a></p>
   <hr />
 

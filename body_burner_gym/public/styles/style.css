@@ -12,12 +12,16 @@ body {
   color: #c4180f;
 }
 
-nav {
-  background-color: #51617c;
+.topnav {
+  background-color: #333;
+  text-align: center;
+  /* display:inline-block; */
+  display: flex;
+    justify-content: center;
 }
 
 h1 {
-  color: white;
+  color: #d4d8dd;
   margin:0;
   font-variant: medium-caps;
   font-size: 80px;
@@ -27,7 +31,7 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: #c92a2a;
   margin:0;
   font-variant: medium-caps;
   font-size: 80px;
@@ -42,6 +46,8 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  /* display:inline-block;
+  list-style-type: none; */
 }
 
 li {
@@ -59,9 +65,36 @@ li a {
 li a:hover {
   background-color: #111;
 }
-.active {
-  background-color: #4CAF50;
+
+/* element.style {
+    color: lightyellow;
+} */
+
+a {
+    color: chartreuse;
 }
+/* p{
+  color: white;
+} */
+.members{
+  color: chartreuse;
+
+}
+.member_details{
+  color: antiquewhite;
+  size: 40px;
+}
+.add_new_member{
+  color: crimson;
+}
+
+.gym_sessions{
+  color: crimson;
+}
+.booking_details{
+  color: crimson;
+}
+
 
 
 /* Change the link color to #111 (black) on hover */
