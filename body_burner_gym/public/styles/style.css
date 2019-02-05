@@ -83,16 +83,67 @@ a {
 .member_details{
   color: antiquewhite;
   size: 40px;
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 250px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }
 .add_new_member{
   color: crimson;
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 50px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }
 
 .gym_sessions{
   color: crimson;
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 250px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
 }
 .booking_details{
   color: crimson;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  width: 250px;
+
+
+div.transbox p
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
 
 
