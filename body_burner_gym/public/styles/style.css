@@ -1,6 +1,9 @@
 body {
   background-image:('/images/background image.jpg');
-  background-size: cover;
+  /* background-color: black; */
+  /* background-size: cover; */
+  /* opacity: 0.5; */
+  /* background-size: auto; */
 }
 
 }
@@ -208,9 +211,48 @@ div.transbox p
   div.transbox p
     margin: 5%;
     font-weight: bold;
-    color: #000000;  
+    color: #000000;
 }
 
+.gym_session{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 100px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.gym_member{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 120px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.new_booking{
+  color: white;
+}
+
+/* .full-booking-container{
+  display: grid;
+} */
 
 
 /* Change the link color to #111 (black) on hover */
