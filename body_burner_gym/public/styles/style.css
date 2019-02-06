@@ -162,7 +162,7 @@ div.transbox p
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    width: 250px;
+    width: 200px;
 
 
   div.transbox p
@@ -209,7 +209,7 @@ div.transbox p
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60);
-    width: 250px;
+    width: 100px;
 
 
   div.transbox p
@@ -275,6 +275,22 @@ div.transbox p
     opacity: 0.6;
     filter: alpha(opacity=60);
     width: 120px;
+
+
+  div.transbox p
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+.booking_gym_member{
+  div.transbox
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    width: 115px;
 
 
   div.transbox p
