@@ -2,10 +2,10 @@
 <form method="post"action="/gym_sessions">
   <label for="name">Name:</label>
   <label for="type">Type:</label>
-  <input type="text" name="name" id="name"/>
+  <input type="text" name="name" id="name" required />
 
   <label for="type">Type:</label>
-  <input type="text" type="type" id="type"/>
+  <input type="text" type="type" id="type" required />
 
 
   <label for="gym_sessions">Gym_session:</label>
@@ -15,5 +15,5 @@
     <% end %>
   </select>
 
-  <input type="submit" value="Add gym session"/>
+  <input type="submit" value="Add gym session" required />
 </form>
