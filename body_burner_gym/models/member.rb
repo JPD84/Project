@@ -19,6 +19,8 @@ class Member
     @id = result[0]['id'].to_i
   end
 
+#Write a statement that allows a member to be updated by their name and age.
+#This should take in the attributes of name, age and id.
   def update()
     sql = "UPDATE members SET (name, age) = ($1, $2) WHERE id = $3"
     values = [@name, @age, @id]
