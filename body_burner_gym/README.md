@@ -4,7 +4,7 @@
 
 A local gym has asked you to build a piece of software to help them to manage memberships, and register members for classes.
 
-![Homepage](https://github.com/JPD84/Project/blob/master/body_burner_gym/public/images/Homepage.png)
+![Homepage](./public/images/Homepage.png)
 _Body Burner Gym App - Homepage_
 
 ![Members](./public/images/Members_page.png)
