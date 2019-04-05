@@ -4,19 +4,19 @@
 
 A local gym has asked you to build a piece of software to help them to manage memberships, and register members for classes.
 
-![Homepage](./codeclan_work/Ruby_Project/body_burner_gym/public/images/Homepage.png)
+![Homepage](https://github.com/JPD84/Project/blob/master/body_burner_gym/public/images/Homepage.png)
 _Body Burner Gym App - Homepage_
 
-![Members](./codeclan_work/Ruby_Project/body_burner_gym/public/images/Members_page.png)
+![Members](./public/images/Members_page.png)
 _Body Burner Gym App - Members page_
 
-![Add New Member](./codeclan_work/Ruby_Project/body_burner_gym/public/images/Add_new_member.png)
+![Add New Member](./public/images/Add_new_member.png)
 _Body Burner Gym App - Add New Member page_
 
-![All_Gym_sessions](./codeclan_work/Ruby_Project/body_burner_gym/public/images/All_Gym_sessions.png)
+![All_Gym_sessions](./public/images/All_Gym_sessions.png)
 _Body Burner Gym App - All Gym Sessions_
 
-![Bookings](./codeclan_work/Ruby_Project/body_burner_gym/public/images/Bookings.png)
+![Bookings](./public/images/Bookings.png)
 _Body Burner Gym App - Booking page_
 
 
