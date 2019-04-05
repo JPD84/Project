@@ -13,7 +13,7 @@ _Body Burner Gym App - Members page_
 ![Add New Member](./public/images/Add_new_member.png)
 _Body Burner Gym App - Add New Member page_
 
-![All_Gym_sessions](./public/images/All_Gym_sessions.png)
+![All_Gym_sessions](./public/images/All_Gym_Sessions.png)
 _Body Burner Gym App - All Gym Sessions_
 
 ![Bookings](./public/images/Bookings.png)
